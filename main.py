@@ -115,7 +115,7 @@ class issue_tracker():
         frame3 = ttk.LabelFrame(self.window, text="", relief=tk.RIDGE)
         frame3.grid(row=2, column=1, columnspan=5, sticky=tk.E+tk.W)
 
-        misc1 = ttk.Label(frame3, text="Test App V.1.0 - 7/12/2020 Outstanding Ohio")
+        misc1 = ttk.Label(frame3, text="Test App V.1.0 - 7/12/2020")
         misc1.grid(row=1, column=1, pady=1, padx=1, sticky=tk.W)
 
 
