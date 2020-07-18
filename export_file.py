@@ -54,9 +54,9 @@ def write_to_excel(chat1,parent):
         worksheet.write(0,0,"Info 1 ",bold)
         worksheet.write(0,1, "Info 2 ",bold)
         worksheet.write(0,2, "Info 3",bold)
-        worksheet.write(0,3, "Info 4",bold)
-        worksheet.write(0,4, "Info 5", bold)
-        worksheet.write(0,5, "Info 6", bold)
+        worksheet.write(0,3, "Drop Down 1",bold)
+        worksheet.write(0,4, "Drop Down 2", bold)
+        worksheet.write(0,5, "Text Box 1", bold)
 
         for i in range(0,len(data)):
             worksheet.write(row, col, data[i][0])
