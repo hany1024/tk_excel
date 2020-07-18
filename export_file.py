@@ -6,15 +6,15 @@ from tkinter import messagebox
 
 
 def to_chart(v1,v2,v3,v4,v5,v6,chat1):
-    ESN = v1.get()
-    equip_num = v2.get()
-    test_time = v3.get()
-    mode = v4.get()
-    err_cat = v5.get()
-    detail = v6.get('1.0','end')
+    info1 = v1.get()
+    info2 = v2.get()
+    info3 = v3.get()
+    dd1 = v4.get()
+    dd2 = v5.get()
+    box = v6.get('1.0','end')
 
     chat1.insert('', 'end', text='',
-                             values=(ESN, equip_num,test_time,mode,err_cat,detail))
+                             values=(info1, info2, info3, dd1, dd2, box))
 
 
 def remove_from_chart(chat1):
