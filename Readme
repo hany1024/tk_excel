@@ -1,0 +1,5 @@
+This project is GUI based on TKinter
+
+1. User enters data
+2. Send to treeview that allows the user to view all entered data in a list form.
+3. Clicking export to excel will generate an excel file that has all the entered data 
