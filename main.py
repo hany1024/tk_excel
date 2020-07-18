@@ -36,10 +36,10 @@ class issue_tracker():
         label1 = ttk.Label(frame1, text="Info 1 ")
         label1.grid(row=1, column=1, pady=5, padx=5, sticky=tk.W)
 
-        label2 = ttk.Label(frame1, text="Info 1 ")
+        label2 = ttk.Label(frame1, text="Info 2 ")
         label2.grid(row=2, column=1, pady=5, padx=5, sticky=tk.W)
 
-        label3 = ttk.Label(frame1, text="Info 1 ")
+        label3 = ttk.Label(frame1, text="Info 3 ")
         label3.grid(row=3, column=1, pady=5, padx=5, sticky=tk.W)
 
         label4 = ttk.Label(frame1, text="Drop Down 1 ")
@@ -88,7 +88,7 @@ class issue_tracker():
         frame2 = ttk.LabelFrame(self.window, text="Frame 2 ", relief=tk.RIDGE)
         frame2.grid(row=1, column=2, sticky=tk.E + tk.W + tk.N + tk.S, padx=15)
 
-        chat1 = ttk.Treeview(frame2, height=13, columns=('Info 1','Info 2', 'Info 3', 'Info 4', 'Info 5', 'Info 6'), selectmode="extended")
+        chat1 = ttk.Treeview(frame2, height=13, columns=('Info 1','Info 2', 'Info 3', 'Drop Down 1', 'Drop Down 2', 'Text Box 1'), selectmode="extended")
 
         scroll_bar = ttk.Scrollbar(frame2, orient="vertical", command=chat1.yview)
         scroll_bar.grid(row=1, column=5, sticky='ns')
@@ -98,9 +98,9 @@ class issue_tracker():
         chat1.heading('#1', text='Info 1', anchor=tk.CENTER)
         chat1.heading('#2', text='Info 2', anchor=tk.CENTER)
         chat1.heading('#3', text='Info 3', anchor=tk.CENTER)
-        chat1.heading('#4', text='Info 4', anchor=tk.CENTER)
-        chat1.heading('#5', text='Info 5', anchor=tk.CENTER)
-        chat1.heading('#6', text='Info 6', anchor=tk.CENTER)
+        chat1.heading('#4', text='Drop Down 1', anchor=tk.CENTER)
+        chat1.heading('#5', text='Drop Down 2', anchor=tk.CENTER)
+        chat1.heading('#6', text='Text Box 1', anchor=tk.CENTER)
 
         chat1.column("#0", width=2)
         chat1.column('#1', stretch=tk.YES, minwidth=50, width=100)
